@@ -16,7 +16,7 @@ color <- c(rgb(102,203,254,maxColorValue=255),
 
 #bitmap(file="../Figs/ri8.bmp", width=9, height=5, res=288,
 #       pointsize=14)
-pdf("../Figs/ri8.pdf", width=9.75, height=6.5, pointsize=16, onefile=TRUE)
+pdf("../Figs/ri8.pdf", width=10, height=6.7, pointsize=16, onefile=TRUE)
 par(mar=rep(0.1,4),las=1,fg="white",col="white",col.axis="white",col.lab="white",
     bg=bgcolor,bty="n")
 plot(0,0,xlim=c(0,864),ylim=c(25,480),xaxt="n",yaxt="n",xlab="",ylab="",type="n")
