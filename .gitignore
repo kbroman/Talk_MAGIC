@@ -1,5 +1,5 @@
 magic.pdf
-Figs/ri8.pdf
+Figs/*.pdf
 .RData
 .RHistory
 *.Rout
