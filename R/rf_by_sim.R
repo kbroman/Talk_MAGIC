@@ -2,15 +2,6 @@
 
 
 source("colors.R")
-color <- c(rgb(102,203,254,maxColorValue=255),
-#           rgb(254,102,254,maxColorValue=255),
-           rgb(254,  0,128,maxColorValue=255),
-           rgb(102,254,102,maxColorValue=255),
-           rgb(128,  0,128,maxColorValue=255),
-           rgb(203,102,254,maxColorValue=255),
-           rgb(254,203,102,maxColorValue=255),
-           rgb(  0,128,128,maxColorValue=255),
-           rgb(102,102,102,maxColorValue=255))
 
 # just the points
 pdf("../Figs/rf_by_sim.pdf", width=9, height=6, pointsize=16, onefile=TRUE)

@@ -4,18 +4,7 @@
 ##############################
 
 source("colors.R")
-color <- c(rgb(102,203,254,maxColorValue=255),
-#           rgb(254,102,254,maxColorValue=255),
-           rgb(254,  0,128,maxColorValue=255),
-           rgb(102,254,102,maxColorValue=255),
-           rgb(128,  0,128,maxColorValue=255),
-           rgb(203,102,254,maxColorValue=255),
-           rgb(254,203,102,maxColorValue=255),
-           rgb(  0,128,128,maxColorValue=255),
-           rgb(102,102,102,maxColorValue=255))
 
-#bitmap(file="../Figs/ri8.bmp", width=9, height=5, res=288,
-#       pointsize=14)
 pdf("../Figs/ri8.pdf", width=10, height=6.7, pointsize=16, onefile=TRUE)
 par(mar=rep(0.1,4),las=1,fg="white",col="white",col.axis="white",col.lab="white",
     bg=bgcolor,bty="n")

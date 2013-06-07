@@ -1,15 +1,6 @@
 # plot of lines of code in R/qtl, over time
 
 source("colors.R")
-color <- c(rgb(102,203,254,maxColorValue=255),
-#           rgb(254,102,254,maxColorValue=255),
-           rgb(254,  0,128,maxColorValue=255),
-           rgb(102,254,102,maxColorValue=255),
-           rgb(128,  0,128,maxColorValue=255),
-           rgb(203,102,254,maxColorValue=255),
-           rgb(254,203,102,maxColorValue=255),
-           rgb(  0,128,128,maxColorValue=255),
-           rgb(102,102,102,maxColorValue=255))
 
 lines <- read.csv("../Perl/lines_code_by_version.csv")
 lines <- lines[nrow(lines):1,]
@@ -61,7 +52,7 @@ text(rep(as.numeric(lines[1,2]) - xd, 3), lines[1,3:5], c("R", "C", "man"),
 top <- u[3]+diff(u[3:4])*0.07
 bot <- u[3]+diff(u[3:4])*0.01
 txt <- u[3]+diff(u[3:4])*0.09
-col <- color[1]
+col <- color[7]
 arrows(idea,top,idea, bot, len=0.1, col=col, lwd=2)
 arrows(svn, top, svn, bot, len=0.1, col=col, lwd=2)
 arrows(git, top, git, bot, len=0.1, col=col, lwd=2)
