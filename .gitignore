@@ -3,3 +3,4 @@ Figs/*.pdf
 .RData
 .RHistory
 *.Rout
+Perl/lines_code_by_version.csv
