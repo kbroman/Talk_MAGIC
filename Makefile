@@ -18,6 +18,6 @@ Figs/rqtl_lines_code.pdf: R/colors.R Perl/lines_code_by_version.csv R/rqtl_lines
 clean:
 	rm *~
 
-cleanall: clean
-	rm -r Figs/*.pdf magic.pdf
-
+cleanall:
+	rm Figs/rqtl_lines_code.pdf Figs/rf_by_sim.pdf Figs/ri8.pdf magic.pdf
+	rm *~
