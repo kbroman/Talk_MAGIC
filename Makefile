@@ -41,3 +41,10 @@ cleanall:
 
 web: magic.pdf
 	scp magic.pdf broman-2:public_html/presentations/
+
+dropbox: ~/Dropbox/Talks/magic.pdf
+
+~/Dropbox/Talks/magic.pdf: magic.pdf
+	cp magic.pdf ~/Dropbox/Talks/
+
+all: magic.pdf dropbox
