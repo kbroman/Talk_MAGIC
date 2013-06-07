@@ -13,11 +13,11 @@ wh <- (rf*1000 == round(rf*1000))
 
 xat <- seq(0, 0.5, by=0.05)
 yat <- seq(0, 0.8, by=0.1)
-grayplot(rf[wh], onestep[wh], xlab="r", ylab="", xat=xat, yat=yat,
+grayplot(rf[wh], onestep[wh], xlab="recombination fraction", ylab="", xat=xat, yat=yat,
          hlines=yat, vlines=xat, ylim=c(0, 7/8+0.02), xaxs="i", yaxs="i",
          pch=21, col="black", bg=color[1], xlim=c(0, 0.5),
          mgp=c(2.1, 0.4, 0))
-mtext(side=2, "R", srt=90, line=2.6, col=textcolor["blue"])
+mtext(side=2, "Pr ( recombination in RIL )", line=2.6, col=textcolor["blue"], las=0)
 abline(h=7/8, col=color2[3], lwd=2)
 u <- par("usr")
 mtext(side=2, at=7/8, "7/8", col=color2[3], line=0.4)
@@ -35,18 +35,18 @@ pdf("../Figs/rf_by_sim_genformula.pdf", width=9, height=6, pointsize=16, onefile
 par(mar=c(4.1, 4.1, 1.1, 1.1),las=1,fg="white",col="white",col.axis="white",col.lab=textcolor["blue"],
     bg=bgcolor,bty="n")
 
-grayplot(rf[wh], onestep[wh], xlab="r", ylab="", xat=xat, yat=yat,
+grayplot(rf[wh], onestep[wh], xlab="recombination fraction", ylab="", xat=xat, yat=yat,
          hlines=yat, vlines=xat, ylim=c(0, 7/8+0.02), xaxs="i", yaxs="i",
          pch=21, col="black", bg=color[1], xlim=c(0, 0.5),
          mgp=c(2.1, 0.4, 0))
-mtext(side=2, "R", srt=90, line=2.6, col=textcolor["blue"])
+mtext(side=2, "Pr ( recombination in RIL )", line=2.6, col=textcolor["blue"], las=0)
 abline(h=7/8, col=color2[3], lwd=2)
 u <- par("usr")
 mtext(side=2, at=7/8, "7/8", col=color2[3], line=0.4)
 
 rect(0.305, 0.403, 0.445, 0.497, col="gray80", border="gray80", alpha=0.7)
-text(0.31, 0.45, "R = a r / (1 + b r)", col="black", adj=c(0, 0.5))
-text(0.43, 0.45, "?", col=color[2])
+text(0.31, 0.45, "R = a r / ( 1 + b r )", col="black", adj=c(0, 0.5))
+text(0.436, 0.45, "?", col=color[2])
 dev.off()
 
 
@@ -55,11 +55,11 @@ pdf("../Figs/rf_by_sim_formula.pdf", width=9, height=6, pointsize=16, onefile=TR
 par(mar=c(4.1, 4.1, 1.1, 1.1),las=1,fg="white",col="white",col.axis="white",col.lab=textcolor["blue"],
     bg=bgcolor,bty="n")
 
-grayplot(rf[wh], onestep[wh], xlab="r", ylab="", xat=xat, yat=yat,
+grayplot(rf[wh], onestep[wh], xlab="recombination fraction", ylab="", xat=xat, yat=yat,
          hlines=yat, vlines=xat, ylim=c(0, 7/8+0.02), xaxs="i", yaxs="i",
          pch=21, col="black", bg=color[1], xlim=c(0, 0.5),
          mgp=c(2.1, 0.4, 0))
-mtext(side=2, "R", srt=90, line=2.6, col=textcolor["blue"])
+mtext(side=2, "Pr ( recombination in RIL )", line=2.6, col=textcolor["blue"], las=0)
 abline(h=7/8, col=color2[3], lwd=2)
 u <- par("usr")
 mtext(side=2, at=7/8, "7/8", col=color2[3], line=0.4)
@@ -69,7 +69,7 @@ lines(x, 7*x/(1+6*x), col=color2[1], lwd=2)
 points(rf[wh], onestep[wh], col="black", bg=color[1], pch=21)
 
 rect(0.305, 0.403, 0.445, 0.497, col="gray80", border="gray80", alpha=0.7)
-text(0.32, 0.45, "R = 7 r / (1 + 6 r)", col="black", adj=c(0, 0.5))
+text(0.32, 0.45, "R = 7 r / ( 1 + 6 r )", col="black", adj=c(0, 0.5))
 dev.off()
 
 
@@ -78,11 +78,11 @@ pdf("../Figs/rf_by_sim_moredata.pdf", width=9, height=6, pointsize=16, onefile=T
 par(mar=c(4.1, 4.1, 1.1, 1.1),las=1,fg="white",col="white",col.axis="white",col.lab=textcolor["blue"],
     bg=bgcolor,bty="n")
 
-grayplot(rf[wh], onestep[wh], xlab="r", ylab="", xat=xat, yat=yat,
+grayplot(rf[wh], onestep[wh], xlab="recombination fraction", ylab="", xat=xat, yat=yat,
          hlines=yat, vlines=xat, ylim=c(0, 7/8+0.02), xaxs="i", yaxs="i",
          pch=21, col="black", bg=color[1], xlim=c(0, 0.5),
          mgp=c(2.1, 0.4, 0))
-mtext(side=2, "R", srt=90, line=2.6, col=textcolor["blue"])
+mtext(side=2, "Pr ( recombination in RIL )", line=2.6, col=textcolor["blue"], las=0)
 abline(h=7/8, col=color2[3], lwd=2)
 u <- par("usr")
 mtext(side=2, at=7/8, "7/8", col=color2[3], line=0.4)
@@ -93,7 +93,7 @@ points(rf[wh], onestep[wh], col="black", bg=color[1], pch=21)
 points(rf[!wh], onestep[!wh], col="black", bg=color[3], pch=21, cex=0.6)
 
 rect(0.305, 0.403, 0.445, 0.497, col="gray80", border="gray80", alpha=0.7)
-text(0.32, 0.45, "R = 7 r / (1 + 6 r)", col="black", adj=c(0, 0.5))
+text(0.32, 0.45, "R = 7 r / ( 1 + 6 r )", col="black", adj=c(0, 0.5))
 
 dev.off()
 
