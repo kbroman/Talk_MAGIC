@@ -138,7 +138,7 @@ for(j in 2:ncol(temp)) {
     rect(xxloc+48,195+temp[1,j]*mult,xxloc+58,195+temp[1,j-1]*mult,
          col=color[temp[2,j]],border=color[temp[2,j]], lend=1, ljoin=1)
 }
-text(u[1],215,expression(G[3]),adj=c(0,0.5))
+text(u[1],215,expression(G[2]*F[1]),adj=c(0,0.5))
 points(xxloc,215,pch=4,cex=1.3)
 segments(xxloc,200,xxloc,180)
 segments(xxloc-39,180,xxloc+39,180)
@@ -174,14 +174,14 @@ for(j in 2:ncol(temp)) {
     rect(xxloc+48,110+temp[1,j]*mult,xxloc+58,110+temp[1,j-1]*mult,
          col=color[temp[2,j]],border=color[temp[2,j]], lend=1, ljoin=1)
 }
-text(u[1],130,expression(G[4]),adj=c(0,0.5))
+text(u[1],130,expression(G[2]*F[2]),adj=c(0,0.5))
 points(xxloc,130,pch=4,cex=1.3)
 arrows(xxloc,80,xxloc,75,len=0.1)
 arrows(xxloc,115,xxloc,75,len=0.1,lty=3)
 
 points(rep(u[1]+10,3),c(-8,0,8)+mean(c(130,65/2)),pch=16,cex=0.4)
 a <- 65-40
-text(u[1],(65+a)/2,expression(G[infinity]),adj=c(0,0.5))
+text(u[1],(65+a)/2,expression(G[2]*F[infinity]),adj=c(0,0.5))
 mult <- (65-a)/fa$mat[1,ncol(fa$mat)]
 rect(xxloc+19*c(-1,1),rep(65,2),xxloc+9*c(-1,1),rep(a,2),col=color[1],border=color[1], lend=1, ljoin=1)
 temp <- fa$mat
