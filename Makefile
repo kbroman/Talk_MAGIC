@@ -38,3 +38,6 @@ clean:
 cleanall:
 	rm magic.pdf $(figs)
 	rm *~
+
+web: magic.pdf
+	scp magic.pdf broman-2:public_html/presentations/
