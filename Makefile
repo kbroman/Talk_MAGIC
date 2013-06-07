@@ -1,4 +1,4 @@
-figs = Figs/rqtl_lines_code.pdf Figs/rf_by_sim.pdf Figs/ri8.pdf Figs/3pt_markov4.pdf Figs/coincidence_8way.pdf Figs/fixation_time.pdf Figs/map_expansion.pdf
+figs = Figs/rqtl_lines_code.pdf Figs/rf_by_sim.pdf Figs/ri8.pdf Figs/3pt_markov4.pdf Figs/coincidence_8way.pdf Figs/fixation_time.pdf Figs/map_expansion.pdf Figs/threepoints.pdf
 
 magic.pdf: magic.tex Figs/haldane_title.pdf Figs/haldane_selfing.png Figs/haldane_sibmating3.png $(figs)
 	pdflatex magic
@@ -28,6 +28,9 @@ Figs/fixation_time.pdf: R/colors.R R/fixation_time.R
 
 Figs/map_expansion.pdf: R/colors.R R/map_expansion_fig.R R/map_expansion_func.R
 	cd R;R CMD BATCH map_expansion_fig.R
+
+Figs/threepoints.pdf: R/colors.R R/3points.R
+	cd R;R CMD BATCH 3points.R
 
 clean:
 	rm *~

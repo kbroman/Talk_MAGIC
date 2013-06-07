@@ -453,7 +453,7 @@ Simulation results
 
 \currentpdfbookmark{H\&W 1931}{HW1931}
 \headsize \color{myyellow}
-\hfill 
+\hfill
 \begin{minipage}{6.55in}
 \centering
 Haldane \& Waddington 1931
@@ -473,7 +473,7 @@ Haldane \& Waddington 1931
 \newpage
 
 \headsize \color{myyellow}
-\hfill 
+\hfill
 \begin{minipage}{5.75in}
 \centering
 Result for selfing
@@ -492,7 +492,7 @@ Result for selfing
 
 \newpage
 \headsize \color{myyellow}
-\hfill 
+\hfill
 \begin{minipage}{5.75in}
 \centering
 Result for sib-mating
@@ -554,7 +554,7 @@ Non-linear regression
 
 \vspace{30mm}
 
-\textsize 
+\textsize
 {\color{myblue}
 \verb|      out <- nls(| {\tt \color{mypink} R \verb|~| a*r/(1 + b*r)}\verb|,| \\
 \verb|                 data = data.frame(r=r, R=R),| \\
@@ -574,7 +574,7 @@ Non-linear regression
 
 \vspace{30mm}
 
-\textsize 
+\textsize
 {\color{myblue}
 \verb|      out <- nls(| {\tt \color{mypink} R \verb|~| a*r/(1 + b*r)}\verb|,| \\
 \verb|                 data = data.frame(r=r, R=R),| \\
@@ -605,7 +605,7 @@ Non-linear regression
 
 \vspace{30mm}
 
-\textsize 
+\textsize
 {\color{myblue}
 \verb|      out <- nls(| {\tt \color{mypink} R \verb|~| a*r/(1 + b*r)}\verb|,| \\
 \verb|                 data = data.frame(r=r, R=R),| \\
@@ -638,6 +638,57 @@ Simulation results
 \centerline{\includegraphics{Figs/rf_by_sim_moredata.pdf}}
 
 \vspace{15mm}
+
+\newpage
+
+\currentpdfbookmark{Coincidence definition}{Coincidence definition}
+
+\headsize \color{myyellow}
+\hfill
+\begin{minipage}{5.75in}
+\centering
+3-point coincidence
+\end{minipage}
+
+\vspace*{1cm}
+
+\hfill \begin{minipage}{9.5in}
+\includegraphics{Figs/threepoints.pdf}
+
+\vspace{1cm}
+
+\color{mywhite} \smallsize
+\begin{itemize}
+\itemsep24pt
+\setlength{\rightskip}{0pt plus 1fil} % makes ragged right
+
+\item $\mathsf{r_{ij}}$ = recombination fraction for interval (i, j)
+
+{\color{myblue} Assume $\mathsf{r_{12} = r_{23} = r}$.}
+
+\item {\color{mypink} Coincidence} = $\mathsf{c = Pr(\text{double
+  recombinant}) / r^2}$
+
+\hspace{20mm} {\color{myblue} = $\mathsf{Pr(\text{rec'n in 23} \ |
+    \ \text{rec'n in 12}) /
+  Pr(\text{rec'n in 12})}$}
+
+\item
+No interference { \color{myblue} = 1 }
+
+Positive interference { \color{myblue} $<$ 1 }
+
+Negative interference { \color{myblue} $>$ 1  }
+
+
+\item Generally {\color{myblue} $\mathsf{c}$} is a function of
+  {\color{myblue} $\mathsf{r}$}
+
+\end{itemize}
+
+\end{minipage} \hspace{0.25in}
+
+
 
 \newpage
 
