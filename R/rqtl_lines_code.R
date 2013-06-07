@@ -8,7 +8,7 @@ library(lubridate)
 lines[,2] <- dmy(as.character(lines[,2]))
 
 pdf("../Figs/rqtl_lines_code.pdf", width=9, height=6, pointsize=16, onefile=TRUE)
-par(mar=c(3.1, 5.1, 1.1, 1.1),las=1,fg="white",col="white",col.axis="white",col.lab="white",
+par(mar=c(3.1, 5.1, 1.1, 1.1),las=1,fg="white",col="white",col.axis="white",col.lab=textcolor["blue"],
     bg=bgcolor,bty="n")
 load("ri8_onestep_rev.RData.gz")
 rf <- as.numeric(names(onestep))
