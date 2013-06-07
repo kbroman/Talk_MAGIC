@@ -3,7 +3,6 @@ source("colors.R")
 pdf("../Figs/map_expansion.pdf", height=6, width=9, pointsize=16, onefile=TRUE)
 
 maxgen <- 20
-source("colors.R")
 color <- c(rgb(102,203,254,maxColorValue=255),
            rgb(254,102,254,maxColorValue=255),
            rgb(102,254,102,maxColorValue=255),
