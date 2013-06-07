@@ -22,7 +22,7 @@ R100 <- as.numeric(dmy("29 Feb 2000"))
 svn <- as.numeric(dmy("16 Jan 2008"))
 git <- as.numeric(dmy("12 Feb 2009"))
 xaxis <- as.numeric(ymd(paste0(yr, "-1-1")))
-xat <- xaxis
+xat <- (xaxis + as.numeric(ymd(paste0(yr-1, "-12-31"))))/2
 
 grayplot(lines[,2], lines[,3], xlab="", ylab="Lines of code", yat=yat, xat=NA,
          hlines=yat, pch=21, col="black", bg=color2[1], ylim=c(0, max(lines[,3:5])*1.02),
