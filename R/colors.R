@@ -30,41 +30,54 @@ f2color <- c(CCcolor[1], hetcolor, CCcolor[5])   # yellow, green, cyan
 sexcolor <- c(rgb(255,80,80, maxColorValue=255), # pink, blue
               CCcolor[5])
 
+textcolor <- c(yellow=rgb(1, 1, 0.7),
+               blue=rgb(0.4,0.8,1),
+               darkblue=rgb(0, 0.25, 0.5),
+               pink=rgb(1,0.7,1),
+               hotpink=rgb(1,0,0.6))
+                
 #par(mar=rep(0.1, 4))
 #plot(0,0,type="n", xlab="", ylab="", xaxt="n", yaxt="n",
 #     xlim=c(0, 100), ylim=c(0, 100))
 #
 #y <- seq(90, 10, length=8)
-#text(rep(5, length(y)), y, seq(along=y))
+#xx <- seq(5, 95, length=8)
+#text(rep(xx[1], length(y)), y, seq(along=y))
 #
-#x <- 15
+#x <- xx[2]
 #text(x, 98, "color")
 #points(rep(x, length(color)), y[seq(along=color)],
 #       pch=21, col="black", bg=color)
 #
-#x <- 25
+#x <- xx[3]
 #text(x, 98, "color2")
 #points(rep(x, length(color2)), y[seq(along=color2)],
 #       pch=21, col="black", bg=color2)
 #
-#x <- 35
+#x <- xx[4]
 #text(x, 98, "CCcolor")
 #points(rep(x, length(CCcolor)), y[seq(along=CCcolor)],
 #       pch=21, col="black", bg=CCcolor)
 #
 #
-#x <- 45
+#x <- xx[5]
 #text(x, 98, "hetcolor")
 #points(rep(x, length(hetcolor)), y[seq(along=hetcolor)],
 #       pch=21, col="black", bg=hetcolor)
 #
 #
-#x <- 55
+#x <- xx[6]
 #text(x, 98, "f2color")
 #points(rep(x, length(f2color)), y[seq(along=f2color)],
 #       pch=21, col="black", bg=f2color)
 #
-#x <- 65
+#x <- xx[7]
 #text(x, 98, "sexcolor")
 #points(rep(x, length(sexcolor)), y[seq(along=sexcolor)],
 #       pch=21, col="black", bg=sexcolor)
+#
+#x <- xx[8]
+#text(x, 98, "textcolor")
+#points(rep(x, length(textcolor)), y[seq(along=textcolor)],
+#       pch=21, col="black", bg=textcolor)
+
