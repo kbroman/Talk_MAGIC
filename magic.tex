@@ -439,43 +439,6 @@ Result for sib-mating
 \vspace{30mm}
 
 
-\newpage
-\addtocounter{page}{-1}
-\headsize \color{myyellow}
-\hfill 
-\begin{minipage}{5.75in}
-\centering
-Result for sib-mating
-\end{minipage}
-
-\vfill
-
-\centerline{\includegraphics[width=10in]{Figs/haldane_sibmating4.png}}
-
-\vspace{30mm}
-
-
-\newpage
-
-\headsize \color{myyellow}
-\hfill 
-\begin{minipage}{5.75in}
-\centering
-Equations for sib-mating
-\end{minipage}
-
-\vspace{20mm}
-
-\includegraphics[width=6in]{Figs/haldane_sibmating1.pdf}
-
-\vspace{-30mm}
-\hfill \includegraphics[width=6in]{Figs/haldane_sibmating2.pdf}
-
-
-
-
-
-
 
 
 \newpage
@@ -488,7 +451,7 @@ Simulation results
 
 \vfill
 
-\centerline{\includegraphics{Figs/rf_by_sim2.pdf}}
+\centerline{\includegraphics{Figs/rf_by_sim.pdf}}
 
 \vspace{15mm}
 
@@ -502,7 +465,114 @@ Simulation results
 
 \vfill
 
-\centerline{\includegraphics{Figs/rf_by_sim3.pdf}}
+\centerline{\includegraphics{Figs/rf_by_sim_genformula.pdf}}
+
+\vspace{15mm}
+
+\newpage
+
+\headsize \color{myyellow}
+\hfill \begin{minipage}{5.75in}
+\centering
+Non-linear least squares
+\end{minipage}
+
+
+\vspace{30mm}
+
+\textsize 
+{\color{myblue}
+\verb|      out <- nls(| {\tt \color{mypink} R \verb|~| a*r/(1 + b*r)}\verb|,| \\
+\verb|                 data=data.frame(r=r, R=R),| \\
+\verb|                 start = list(a=2, b=2))| \\
+\verb|      summary(out)|
+}
+
+\newpage
+\addtocounter{page}{-1}
+
+\headsize \color{myyellow}
+\hfill \begin{minipage}{5.75in}
+\centering
+Non-linear least squares
+\end{minipage}
+
+
+\vspace{30mm}
+
+\textsize 
+{\color{myblue}
+\verb|      out <- nls(| {\tt \color{mypink} R \verb|~| a*r/(1 + b*r)}\verb|,| \\
+\verb|                 data=data.frame(r=r, R=R),| \\
+\verb|                 start = list(a=2, b=2))| \\
+\verb|      summary(out)|
+}
+
+\color{mywhite}
+\begin{verbatim}
+
+        Estimate  Std. Error
+      a    7.016       0.011
+      b    6.023       0.016
+\end{verbatim}
+
+
+\newpage
+\addtocounter{page}{-1}
+
+\headsize \color{myyellow}
+\hfill \begin{minipage}{5.75in}
+\centering
+Non-linear least squares
+\end{minipage}
+
+
+\vspace{30mm}
+
+\textsize 
+{\color{myblue}
+\verb|      out <- nls(| {\tt \color{mypink} R \verb|~| a*r/(1 + b*r)}\verb|,| \\
+\verb|                 data=data.frame(r=r, R=R),| \\
+\verb|                 start = list(a=2, b=2))| \\
+\verb|      summary(out)|
+}
+
+\color{mywhite}
+\begin{verbatim}
+
+        Estimate  Std. Error
+      a    7.003       0.008
+      b    6.005       0.012
+\end{verbatim}
+
+
+
+
+\newpage
+
+\headsize \color{myyellow}
+\hfill \begin{minipage}{5.75in}
+\centering
+Simulation results
+\end{minipage}
+
+\vfill
+
+\centerline{\includegraphics{Figs/rf_by_sim_formula.pdf}}
+
+\vspace{15mm}
+
+\newpage
+
+\headsize \color{myyellow}
+\hfill \begin{minipage}{5.75in}
+\centering
+Simulation results
+\end{minipage}
+
+\vfill
+
+\centerline{\includegraphics{Figs/rf_by_sim_moredata.pdf}}
 
 \vspace{15mm}
 
