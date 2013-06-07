@@ -35,6 +35,9 @@
 \definecolor{myhotpink}{rgb}{1,0,0.6}
 \definecolor{mywhite}{rgb}{1,1,1}
 
+\definecolor{citecolor}{rgb}{0.44,0.44,0.44}
+\newcommand{\citesize}{\fontsize{14}{18} \selectfont}
+
 % following: B/W
 %\definecolor{mybgcolor}{rgb}{1,1,1}
 %\definecolor{myyellow}{rgb}{0,0,0}
@@ -59,6 +62,7 @@
 \newcommand{\smallersize}{\fontsize{20}{25} \selectfont}
 \newcommand{\smallestsize}{\fontsize{18}{22} \selectfont}
 \newcommand{\evensmaller}{\fontsize{14}{18} \selectfont}
+\newcommand{\supersmall}{\fontsize{14}{18} \selectfont}
 \newcommand{\lod}{\text{LOD}}
 \newcommand{\bic}{\text{BIC}}
 \newcommand{\rss}{\text{RSS}}
@@ -178,7 +182,7 @@ MAGIC lines
 
 \vfill
 
-\hfill {\smallestsize \color{myblue} \href{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1456308/}{Valdar et al., Genetics 172:1783, 2006}}
+\hfill {\citesize \color{citecolor} \href{http://www.genetics.org/content/172/3/1783.full}{Valdar et al., Genetics 172:1783, 2006}}
 
 \vspace*{5mm}
 
@@ -202,7 +206,7 @@ MAGIC lines
 
 \vfill
 
-\hfill {\smallestsize \color{myblue} \href{http://www.genetics.org/content/172/3/1783.full}{Valdar et al., Genetics 172:1783, 2006}}
+\hfill {\citesize \color{citecolor} \href{http://www.genetics.org/content/172/3/1783.full}{Valdar et al., Genetics 172:1783, 2006}}
 
 \vspace*{5mm}
 
@@ -254,7 +258,7 @@ How many? \\[20pt]
 
 \vfill
 
-\hfill {\smallestsize \color{myblue} \href{http://www.genetics.org/content/172/3/1783.full}{Valdar et al., Genetics 172:1783, 2006}}
+\hfill {\citesize \color{citecolor} \href{http://www.genetics.org/content/172/3/1783.full}{Valdar et al., Genetics 172:1783, 2006}}
 
 \vspace*{5mm}
 
@@ -305,7 +309,7 @@ Which?
 
 \vfill
 
-\hfill {\smallestsize \color{myblue} \href{http://www.genetics.org/content/172/3/1783.full}{Valdar et al., Genetics 172:1783, 2006}}
+\hfill {\citesize \color{citecolor} \href{http://www.genetics.org/content/172/3/1783.full}{Valdar et al., Genetics 172:1783, 2006}}
 
 \vspace*{5mm}
 
@@ -357,7 +361,7 @@ How long?
 
 \vfill
 
-\hfill {\smallestsize \color{myblue} \href{http://www.genetics.org/content/172/3/1783.full}{Valdar et al., Genetics 172:1783, 2006}}
+\hfill {\citesize \color{citecolor} \href{http://www.genetics.org/content/172/3/1783.full}{Valdar et al., Genetics 172:1783, 2006}}
 
 \vspace*{5mm}
 
@@ -411,7 +415,7 @@ How?
 
 \vfill
 
-\hfill {\smallestsize \color{myblue} \href{http://www.genetics.org/content/172/3/1783.full}{Valdar et al., Genetics 172:1783, 2006}}
+\hfill {\citesize \color{citecolor} \href{http://www.genetics.org/content/172/3/1783.full}{Valdar et al., Genetics 172:1783, 2006}}
 
 \vspace*{5mm}
 
@@ -447,6 +451,7 @@ Simulation results
 
 \newpage
 
+\currentpdfbookmark{H\&W 1931}{HW1931}
 \headsize \color{myyellow}
 \hfill 
 \begin{minipage}{6.55in}
@@ -460,7 +465,7 @@ Haldane \& Waddington 1931
 
 \vfill
 
-\hfill {\smallestsize \color{myblue} \href{http://www.genetics.org/content/16/4/357.full.pdf}{Haldane \& Waddington, Genetics
+\hfill {\citesize \color{citecolor} \href{http://www.genetics.org/content/16/4/357.full.pdf}{Haldane \& Waddington, Genetics
   16:357, 1931}}
 
 \vspace*{5mm}
@@ -480,7 +485,7 @@ Result for selfing
 
 \vfill
 
-\hfill {\smallestsize \color{myblue} \href{http://www.genetics.org/content/16/4/357.full.pdf}{Haldane \& Waddington, Genetics
+\hfill {\citesize \color{citecolor} \href{http://www.genetics.org/content/16/4/357.full.pdf}{Haldane \& Waddington, Genetics
   16:357, 1931}}
 
 \vspace*{5mm}
@@ -499,7 +504,7 @@ Result for sib-mating
 
 \vfill
 
-\hfill {\smallestsize \color{myblue} \href{http://www.genetics.org/content/16/4/357.full.pdf}{Haldane \& Waddington, Genetics
+\hfill {\citesize \color{citecolor} \href{http://www.genetics.org/content/16/4/357.full.pdf}{Haldane \& Waddington, Genetics
   16:357, 1931}}
 
 \vspace*{5mm}
@@ -618,6 +623,8 @@ Non-linear regression
 
 \newpage
 
+\currentpdfbookmark{Simulation results}{Simulation results}
+
 \headsize \color{myyellow}
 \hfill \begin{minipage}{5.75in}
 \centering
@@ -632,42 +639,54 @@ Simulation results
 
 \newpage
 
+\currentpdfbookmark{Coincidence plot}{Coincidence plot}
+
 \headsize \color{myyellow}
 \hfill \begin{minipage}{5.75in}
 \centering
 Coincidence function
 \end{minipage}
 
+\vspace{15mm}
+
+\centerline{\includegraphics{Figs/coincidence_8way.pdf}}
+
 \vfill
 
-\hfill {\smallestsize \color{myblue} \href{http://www.genetics.org/content/169/2/1133.full}{Broman, Genetics
+\hfill {\citesize \color{citecolor} \href{http://www.genetics.org/content/169/2/1133.full}{Broman, Genetics
 169:1133, 2005}}
 
 \vspace*{5mm}
 
 \newpage
+
+\currentpdfbookmark{non-Markov property}{nonMarkov property}
 
 \headsize \color{myyellow}
 \hfill \begin{minipage}{5.75in}
 \centering
-Another interesting feature
+{\color{mypink} non-}Markov property
 \end{minipage}
 
 \vspace{15mm}
 
-\color{mywhite}
-\smallsize
+\color{myblue} \smallsize
+$$ \mathsf{log_2 \left\{ \frac{
+    Pr(M_3 = A \ | \ M_2 = {\color{mypink} E}, M_1 = x)}{
+    Pr(M_3 = A \ | \ M_2 = {\color{mypink} E})}\right\}}$$
 
-[bits of C within A]
+\centerline{\includegraphics[scale=0.85]{Figs/3pt_markov4.pdf}}
 
 \vfill
 
-\hfill {\smallestsize \color{myblue} \href{http://www.genetics.org/content/169/2/1133.full}{Broman, Genetics
+\hfill {\citesize \color{citecolor} \href{http://www.genetics.org/content/169/2/1133.full}{Broman, Genetics
 169:1133, 2005}}
 
 \vspace*{5mm}
 
 \newpage
+
+\currentpdfbookmark{Coincidence formula}{Coincidence formula}
 
 \headsize \color{myyellow}
 \hfill \begin{minipage}{5.75in}
@@ -675,14 +694,24 @@ Another interesting feature
 Coincidence formula
 \end{minipage}
 
+\vspace{5cm}
+
+\supersmall \color{mywhite}
+
+$$ \mathsf{C = \frac{(1+6r)[280 + 1208r - 848r^2 + 5c(7-28r - 368r^2 + 344r^3)
+  - 2c^2(49 - 324r + 452r^2)r^2 - 16c^3(1-2r)r^4]}{49 (1+12r-12cr^2)
+    [5+10r-4(2+c)r^2+8cr^3]} }$$
+
 \vfill
 
-\hfill {\smallestsize \color{myblue} \href{http://www.genetics.org/content/175/3/1267.full}{Teuscher \& Broman, Genetics
+\hfill {\citesize \color{citecolor} \href{http://www.genetics.org/content/175/3/1267.full}{Teuscher \& Broman, Genetics
 175:1267, 2007}}
 
 \vspace*{5mm}
 
 \newpage
+
+\currentpdfbookmark{CC}{CC2}
 
 \headsize \color{myyellow}
 \hfill \begin{minipage}{5.75in}
@@ -697,6 +726,8 @@ The CC again
 
 \newpage
 
+\currentpdfbookmark{Fixation}{Fixation}
+
 \headsize \color{myyellow}
 \hfill \begin{minipage}{5.75in}
 \centering
@@ -705,7 +736,7 @@ Fixation probability
 
 \vfill
 
-\hfill {\smallestsize \color{myblue} \href{http://www.genetics.org/content/190/2/403.full}{Broman, Genetics
+\hfill {\citesize \color{citecolor} \href{http://www.genetics.org/content/190/2/403.full}{Broman, Genetics
 190:403, 2012}}
 
 \vspace*{5mm}
@@ -713,6 +744,8 @@ Fixation probability
 
 
 \newpage
+
+\currentpdfbookmark{Recombination by generation}{Recombination by generation}
 
 \headsize \color{myyellow}
 \hfill \begin{minipage}{5.75in}
@@ -722,7 +755,7 @@ Recombination frequency
 
 \vfill
 
-\hfill {\smallestsize \color{myblue} \href{http://www.genetics.org/content/190/2/403.full}{Broman, Genetics
+\hfill {\citesize \color{citecolor} \href{http://www.genetics.org/content/190/2/403.full}{Broman, Genetics
 190:403, 2012}}
 
 \vspace*{5mm}
@@ -731,7 +764,7 @@ Recombination frequency
 
 \newpage
 
-\currentpdfbookmark{MAGIC lines 2}{MAGIC lines 2}
+\currentpdfbookmark{MAGIC lines}{MAGIC lines 2}
 
 \headsize \color{myyellow}
 \hfill \begin{minipage}{5.75in}
@@ -776,12 +809,14 @@ How?
 
 \vfill
 
-\hfill {\smallestsize \color{myblue} \href{http://www.genetics.org/content/172/3/1783.full}{Valdar et al., Genetics 172:1783, 2006}}
+\hfill {\citesize \color{citecolor} \href{http://www.genetics.org/content/172/3/1783.full}{Valdar et al., Genetics 172:1783, 2006}}
 
 \vspace*{5mm}
 
 
 \newpage
+
+\currentpdfbookmark{R/qtl lines of code}{Rqtl lines code}
 
 \headsize \color{myyellow}
 \hfill \begin{minipage}{5.75in}
