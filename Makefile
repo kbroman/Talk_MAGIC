@@ -47,4 +47,4 @@ dropbox: ~/Dropbox/Talks/magic.pdf
 ~/Dropbox/Talks/magic.pdf: magic.pdf
 	cp magic.pdf ~/Dropbox/Talks/
 
-all: magic.pdf dropbox
+all: magic.pdf dropbox web
