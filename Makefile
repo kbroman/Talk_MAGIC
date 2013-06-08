@@ -1,6 +1,6 @@
 figs = Figs/rqtl_lines_code.pdf Figs/rf_by_sim.pdf Figs/ri8.pdf Figs/3pt_markov4.pdf Figs/coincidence_8way.pdf Figs/fixation_time.pdf Figs/map_expansion.pdf Figs/threepoints.pdf
 
-magic.pdf: magic.tex Figs/haldane_title.pdf Figs/haldane_selfing.png Figs/haldane_sibmating3.png $(figs)
+magic.pdf: magic.tex Figs/haldane_title.pdf Figs/haldane_selfing.png Figs/haldane_sibmating3.png Figs/ccmice.png $(figs)
 	pdflatex magic
 	pdflatex magic
 	rm magic.aux magic.log magic.out
