@@ -1,5 +1,6 @@
 # plot of lines of code in R/qtl, over time
 
+library(broman)
 source("colors.R")
 
 lines <- read.csv("../Perl/lines_code_by_version.csv")
