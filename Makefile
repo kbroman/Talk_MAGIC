@@ -40,7 +40,7 @@ cleanall:
 	rm *~
 
 web: magic_web.pdf
-	scp magic_web.pdf broman-2:public_html/presentations/
+	scp magic.pdf magic_web.pdf broman-2:public_html/presentations/
 
 magic_web.pdf: magic_web.tex
 	pdflatex magic_web
