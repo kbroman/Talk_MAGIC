@@ -23,7 +23,7 @@ RI <- sort(RI)
 
 pdf("../Figs/coincidence_8way.pdf", width=9, height=6,
       pointsize=16, onefile=TRUE)
-par(mar=c(3.6,3.1,1.1,1.1),las=1,fg="white",col="black",
+par(mar=c(3.1,3.6,1.1,1.1),las=1,fg="white",col="black",
     col.axis="white",col.lab=textcolor["blue"],
     bg=bgcolor)
 r <- c(seq(0,0.0025,len=26)[-c(1:3,26)],seq(0,0.5,length=201)[-c(1,201)])
