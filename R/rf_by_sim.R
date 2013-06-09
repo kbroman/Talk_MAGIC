@@ -13,13 +13,13 @@ wh <- (rf*1000 == round(rf*1000))
 
 xat <- seq(0, 0.5, by=0.05)
 yat <- seq(0, 0.8, by=0.1)
-grayplot(rf[wh], onestep[wh], xlab="recombination fraction", ylab="", xat=xat, yat=yat,
+grayplot(rf[wh], onestep[wh], xlab="recombination fraction", ylab="Pr ( recombination in RIL )",
+         xat=xat, yat=yat,
          hlines=yat, vlines=xat, ylim=c(0, 7/8+0.02), xaxs="i", yaxs="i",
          pch=21, col="black", bg=color[1], xlim=c(0, 0.5),
-         mgp=c(2.1, 0.4, 0))
-mtext(side=2, "Pr ( recombination in RIL )", line=2.6, col=textcolor["blue"], las=0)
+         mgp.x=c(2.1, 0.4, 0), mgp.y=c(2.6, 0.4, 0))
+mtext(side=2, "", line=2.6, col=textcolor["blue"], las=0)
 abline(h=7/8, col=color2[3], lwd=2)
-u <- par("usr")
 mtext(side=2, at=7/8, "7/8", col=color2[3], line=0.4)
 
 dev.off()
@@ -35,13 +35,12 @@ pdf("../Figs/rf_by_sim_genformula.pdf", width=9, height=6, pointsize=16, onefile
 par(mar=c(4.1, 4.1, 1.1, 1.1),las=1,fg="white",col="white",col.axis="white",col.lab=textcolor["blue"],
     bg=bgcolor,bty="n")
 
-grayplot(rf[wh], onestep[wh], xlab="recombination fraction", ylab="", xat=xat, yat=yat,
+grayplot(rf[wh], onestep[wh], xlab="recombination fraction", ylab="Pr ( recombination in RIL )",
+         xat=xat, yat=yat,
          hlines=yat, vlines=xat, ylim=c(0, 7/8+0.02), xaxs="i", yaxs="i",
          pch=21, col="black", bg=color[1], xlim=c(0, 0.5),
-         mgp=c(2.1, 0.4, 0))
-mtext(side=2, "Pr ( recombination in RIL )", line=2.6, col=textcolor["blue"], las=0)
+         mgp.x=c(2.1, 0.4, 0), mgp.y=c(2.6, 0.4, 0))
 abline(h=7/8, col=color2[3], lwd=2)
-u <- par("usr")
 mtext(side=2, at=7/8, "7/8", col=color2[3], line=0.4)
 
 rect(0.305, 0.403, 0.445, 0.497, col="gray80", border="gray80", alpha=0.7)
@@ -55,13 +54,12 @@ pdf("../Figs/rf_by_sim_formula.pdf", width=9, height=6, pointsize=16, onefile=TR
 par(mar=c(4.1, 4.1, 1.1, 1.1),las=1,fg="white",col="white",col.axis="white",col.lab=textcolor["blue"],
     bg=bgcolor,bty="n")
 
-grayplot(rf[wh], onestep[wh], xlab="recombination fraction", ylab="", xat=xat, yat=yat,
+grayplot(rf[wh], onestep[wh], xlab="recombination fraction", ylab="Pr ( recombination in RIL )",
+         xat=xat, yat=yat,
          hlines=yat, vlines=xat, ylim=c(0, 7/8+0.02), xaxs="i", yaxs="i",
          pch=21, col="black", bg=color[1], xlim=c(0, 0.5),
-         mgp=c(2.1, 0.4, 0))
-mtext(side=2, "Pr ( recombination in RIL )", line=2.6, col=textcolor["blue"], las=0)
+         mgp.x=c(2.1, 0.4, 0), mgp.y=c(2.6, 0.4, 0))
 abline(h=7/8, col=color2[3], lwd=2)
-u <- par("usr")
 mtext(side=2, at=7/8, "7/8", col=color2[3], line=0.4)
 
 x <- seq(0, 0.5, length=251)
@@ -78,13 +76,12 @@ pdf("../Figs/rf_by_sim_moredata.pdf", width=9, height=6, pointsize=16, onefile=T
 par(mar=c(4.1, 4.1, 1.1, 1.1),las=1,fg="white",col="white",col.axis="white",col.lab=textcolor["blue"],
     bg=bgcolor,bty="n")
 
-grayplot(rf[wh], onestep[wh], xlab="recombination fraction", ylab="", xat=xat, yat=yat,
+grayplot(rf[wh], onestep[wh], xlab="recombination fraction", ylab="Pr ( recombination in RIL )",
+         xat=xat, yat=yat,
          hlines=yat, vlines=xat, ylim=c(0, 7/8+0.02), xaxs="i", yaxs="i",
          pch=21, col="black", bg=color[1], xlim=c(0, 0.5),
-         mgp=c(2.1, 0.4, 0))
-mtext(side=2, "Pr ( recombination in RIL )", line=2.6, col=textcolor["blue"], las=0)
+         mgp.x=c(2.1, 0.4, 0), mgp.y=c(2.6, 0.4, 0))
 abline(h=7/8, col=color2[3], lwd=2)
-u <- par("usr")
 mtext(side=2, at=7/8, "7/8", col=color2[3], line=0.4)
 
 x <- seq(0, 0.5, length=251)
