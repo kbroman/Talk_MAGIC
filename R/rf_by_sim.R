@@ -17,6 +17,7 @@ grayplot(rf[wh], onestep[wh], xlab="recombination fraction", ylab="Pr ( recombin
          xat=xat, yat=yat,
          hlines=yat, vlines=xat, ylim=c(0, 7/8+0.02), xaxs="i", yaxs="i",
          pch=21, col="black", bg=color[1], xlim=c(0, 0.5),
+         vlines.col="gray90", hlines.col="gray90",
          mgp.x=c(2.1, 0.4, 0), mgp.y=c(2.6, 0.4, 0))
 mtext(side=2, "", line=2.6, col=textcolor["blue"], las=0)
 abline(h=7/8, col=color2[3], lwd=2)
@@ -39,6 +40,7 @@ grayplot(rf[wh], onestep[wh], xlab="recombination fraction", ylab="Pr ( recombin
          xat=xat, yat=yat,
          hlines=yat, vlines=xat, ylim=c(0, 7/8+0.02), xaxs="i", yaxs="i",
          pch=21, col="black", bg=color[1], xlim=c(0, 0.5),
+         vlines.col="gray90", hlines.col="gray90",
          mgp.x=c(2.1, 0.4, 0), mgp.y=c(2.6, 0.4, 0))
 abline(h=7/8, col=color2[3], lwd=2)
 mtext(side=2, at=7/8, "7/8", col=color2[3], line=0.4)
@@ -58,6 +60,7 @@ grayplot(rf[wh], onestep[wh], xlab="recombination fraction", ylab="Pr ( recombin
          xat=xat, yat=yat,
          hlines=yat, vlines=xat, ylim=c(0, 7/8+0.02), xaxs="i", yaxs="i",
          pch=21, col="black", bg=color[1], xlim=c(0, 0.5),
+         vlines.col="gray90", hlines.col="gray90",
          mgp.x=c(2.1, 0.4, 0), mgp.y=c(2.6, 0.4, 0))
 abline(h=7/8, col=color2[3], lwd=2)
 mtext(side=2, at=7/8, "7/8", col=color2[3], line=0.4)
@@ -80,6 +83,7 @@ grayplot(rf[wh], onestep[wh], xlab="recombination fraction", ylab="Pr ( recombin
          xat=xat, yat=yat,
          hlines=yat, vlines=xat, ylim=c(0, 7/8+0.02), xaxs="i", yaxs="i",
          pch=21, col="black", bg=color[1], xlim=c(0, 0.5),
+         vlines.col="gray90", hlines.col="gray90",
          mgp.x=c(2.1, 0.4, 0), mgp.y=c(2.6, 0.4, 0))
 abline(h=7/8, col=color2[3], lwd=2)
 mtext(side=2, at=7/8, "7/8", col=color2[3], line=0.4)

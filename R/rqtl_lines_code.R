@@ -28,6 +28,7 @@ xat <- (xaxis + as.numeric(ymd(paste0(yr-1, "-12-31"))))/2
 grayplot(lines[,2], lines[,3], xlab="Year", ylab="Lines of code", yat=yat, xat=NA,
          hlines=yat, pch=21, col="black", bg=color2[1], ylim=c(0, max(lines[,3:5])*1.02),
          mgp.x=c(1.6, 0.4, 0), vlines=xat, yaxs="i", vlines.col="gray60",
+         hlines.col="gray90",
          xlim=range(xaxis), xaxs="i", mgp.y=c(3.3, 0.4, 0))
 for(i in 4:5)
   points(lines[,2], lines[,i], pch=21, col="black", bg=color2[i-2])
@@ -81,6 +82,7 @@ xat <- (xaxis + as.numeric(ymd(paste0(yr-1, "-12-31"))))/2
 grayplot(lines[,2], lines[,3], xlab="Year", ylab="Lines of code", yat=yat, xat=NA,
          hlines=yat, pch=21, col="black", bg=color2[1], ylim=c(0, max(lines[,3:5])*1.02),
          mgp.x=c(1.6, 0.4, 0), vlines=xat, yaxs="i", vlines.col="gray60",
+         hlines.col="gray90",
          xlim=range(xaxis), xaxs="i", mgp.y=c(3.3, 0.4, 0))
 for(i in 4:5)
   points(lines[,2], lines[,i], pch=21, col="black", bg=color2[i-2])
@@ -141,6 +143,7 @@ xat <- (xaxis + as.numeric(ymd(paste0(yr-1, "-12-31"))))/2
 grayplot(lines[,2], lines[,3], xlab="Year", ylab="Lines of code", yat=yat, xat=NA,
          hlines=yat, pch=21, col="black", bg=color2[1], ylim=c(0, max(lines[,3:5])*1.02),
          mgp.x=c(1.6, 0.4, 0), vlines=xat, yaxs="i", vlines.col="gray60",
+         hlines.col="gray90",
          xlim=range(xaxis), xaxs="i", mgp.y=c(3.3, 0.4, 0))
 for(i in 4:5)
   points(lines[,2], lines[,i], pch=21, col="black", bg=color2[i-2])
@@ -208,6 +211,7 @@ xat <- (xaxis + as.numeric(ymd(paste0(yr-1, "-12-31"))))/2
 grayplot(lines[,2], lines[,3], xlab="Year", ylab="Lines of code", yat=yat, xat=NA,
          hlines=yat, pch=21, col="black", bg=color2[1], ylim=c(0, max(lines[,3:5])*1.02),
          mgp.x=c(1.6, 0.4, 0), vlines=xat, yaxs="i", vlines.col="gray60",
+         hlines.col="gray90",
          xlim=range(xaxis), xaxs="i", mgp.y=c(3.3, 0.4, 0))
 for(i in 4:5)
   points(lines[,2], lines[,i], pch=21, col="black", bg=color2[i-2])
