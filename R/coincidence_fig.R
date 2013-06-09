@@ -29,8 +29,6 @@ par(mar=c(3.1,3.6,1.1,1.1),las=1,fg="white",col="black",
 r <- c(seq(0,0.0025,len=26)[-c(1:3,26)],seq(0,0.5,length=201)[-c(1,201)])
 Rsib <- 4*r/(1+6*r)
 Rself <- 2*r/(1+2*r)
-xat <- seq(0, 0.5, by=0.1)
-yat <- seq(0, 2, by=0.5)
 grayplot(c(r,0.5),c(Cself[,1],1),ylim=c(0,2),xlab="recombination fraction",ylab="Coincidence",las=1,
          type="l",lwd=2,col=color[1],xlim=c(0,0.5), xaxs="i", yaxs="i",
          xat=seq(0, 0.5, by=0.1), yat=seq(0, 2, by=0.5),
