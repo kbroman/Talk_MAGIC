@@ -8,3 +8,5 @@ Perl/lines_code_by_version.csv
 *.log
 *.out
 notes.pdf
+magic_web.pdf
+magic_web.tex

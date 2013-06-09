@@ -39,8 +39,16 @@ cleanall:
 	rm magic.pdf $(figs)
 	rm *~
 
-web: magic.pdf
-	scp magic.pdf broman-2:public_html/presentations/
+web: magic_web.pdf
+	scp magic_web.pdf broman-2:public_html/presentations/
+
+magic_web.pdf: magic_web.tex
+	pdflatex magic_web
+	pdflatex magic_web
+	rm magic_web.aux magic_web.log magic_web.out
+
+magic_web.tex: magic.tex Perl/convertpdf4web.pl
+	Perl/convertpdf4web.pl
 
 dropbox: ~/Dropbox/Talks/magic.pdf
 
