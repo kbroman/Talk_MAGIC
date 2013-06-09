@@ -18,7 +18,7 @@ xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
                               has waived all copyright and related or
                               neighboring rights to
                                 <span
-                                property="dct:title">&ldquo;MAGIC design&rdquo;</span>.
+                                property="dct:title">&ldquo;MAGIC design and other topics&rdquo;</span>.
                                 This work is published from:
                                 <span property="vcard:Country"
                                 datatype="dct:ISO3166"
