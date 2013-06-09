@@ -1,12 +1,12 @@
+# plot of coincidence function
+
+library(broman)
 source("colors.R")
 attach("coincidence.Rdata.gz")
 
 r <- c(seq(0,0.0025,len=26)[-c(1:3,26)],seq(0,0.5,length=201)[-c(1,201)])
 
-color <- c(rgb(102,203,254,maxColorValue=255),
-           rgb(254,102,254,maxColorValue=255),
-           rgb(102,254,102,maxColorValue=255),
-           rgb(254,203,102,maxColorValue=255)) # yellow
+color <- c(sexcolor[2], hetcolor, sexcolor[1])
 
 attach("coinc_ri8.RData.gz")
 attach("coinc_8way_numerically.RData")
@@ -23,18 +23,23 @@ RI <- sort(RI)
 
 pdf("../Figs/coincidence_8way.pdf", width=9, height=6,
       pointsize=16, onefile=TRUE)
-par(mar=c(4.1,4.1,1.1,1.1),las=1,fg="white",col="white",
+par(mar=c(3.6,3.1,1.1,1.1),las=1,fg="white",col="black",
     col.axis="white",col.lab=textcolor["blue"],
     bg=bgcolor)
 r <- c(seq(0,0.0025,len=26)[-c(1:3,26)],seq(0,0.5,length=201)[-c(1,201)])
 Rsib <- 4*r/(1+6*r)
 Rself <- 2*r/(1+2*r)
-plot(c(r,0.5),c(Cself[,1],1),ylim=c(0,2),xlab="recombination fraction",ylab="Coincidence",las=1,
-     type="l",lwd=2,col=color[1],xlim=c(0,0.5), xaxs="i", yaxs="i")
-abline(h=1,lty=3)
-segments(min(r),1,0.5,1,lwd=2)
+xat <- seq(0, 0.5, by=0.1)
+yat <- seq(0, 2, by=0.5)
+grayplot(c(r,0.5),c(Cself[,1],1),ylim=c(0,2),xlab="recombination fraction",ylab="Coincidence",las=1,
+         type="l",lwd=2,col=color[1],xlim=c(0,0.5), xaxs="i", yaxs="i",
+         xat=seq(0, 0.5, by=0.1), yat=seq(0, 2, by=0.5),
+         vlines=seq(0, 0.5, by=0.05), hlines=seq(0, 2, by=0.25),
+         vlines.col="gray90", hlines.col="gray90",
+         mgp.x=c(1.7, 0.3, 0), mgp.y=c(2.1, 0.4, 0))
+segments(min(r),1,0.5,1,lwd=2, col="black")
 lines(c(r,0.5),c(Csib[,1],1),lwd=2,col=color[2])
-lines(c(r,0.5),c(Cf1[,"11.3"],1),lwd=2,col="white",lty=2)
+lines(c(r,0.5),c(Cf1[,"11.3"],1),lwd=2,col="black",lty=2)
 lines(c(r,0.5),c(Cself[,"11.3"],1),lwd=2,col=color[1],lty=2)
 lines(c(r,0.5),c(Csib[,"11.3"],1),lwd=2,col=color[2],lty=2)
 
@@ -44,8 +49,9 @@ rit <- RI/(7-6*RI)
 lines(rt,coinc,col=color[3],lwd=2)
 lines(rit,coincI,col=color[3],lwd=2,lty=2)
 u <- par("usr")
-legend(u[2], u[4], lty=c(1,1,1,1,1,1,2), lwd=2, xjust=1, 
-       col=c("white",color[1],color[2], color[3], bgcolor,"white","white"),
+par(col="black")
+legend(u[2], u[4], lty=c(1,1,1,1,1,1,2), lwd=2, xjust=1,
+       col=c("black",color[1],color[2], color[3], "gray80", "black", "black"),
        legend=c("Meiosis","2-way RILs by selfing","2-way RILs by sib-mating","8-way RILs by sib-mating",
-         "","No interference","Mouse interference"),cex=0.9)
+         "","No interference","Mouse interference"), cex=0.9, bg="gray80", box.col="black", box.lwd=2)
 dev.off()
