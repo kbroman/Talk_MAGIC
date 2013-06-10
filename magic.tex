@@ -921,6 +921,8 @@ MAGIC is magic
 
 \item High-precision mapping
 
+\item Predictable linkage disequilibrium
+
 \item Phenotype replicates to reduce individual variation
 
 \item Pool phenotypes from multiple labs, environments, treatments
@@ -951,7 +953,7 @@ MAGIC is magic
 \hfill \begin{minipage}{9.5in}
 \begin{itemize}
 \itemsep24pt
-\item Equally frequent alleles
+\item All alleles are common
 \item All markers fully informative
 \item Analysis by a bunch of t-tests
 \end{itemize}
@@ -1111,6 +1113,7 @@ How many founders?
 \item More QTL
 \item Greater precision
 \item Estimate allele frequencies
+\item Haplotype analysis in founders
 \end{itemize}
 
 \end{minipage}
@@ -1176,11 +1179,12 @@ How much mixing?
 \hfill \begin{minipage}{10in}
 \begin{itemize}
 \itemsep24pt
-\item Start with many random cross directions?
 \item More mixing $\rightarrow$ Greater mapping precision
-\item Lower power for de novo mapping
-\item Takes longer
-\item Potential for drift and population structure
+\item ...but lower power for de novo mapping
+\item Potential for population structure, missing alleles
+\color{myblue}
+\item Random mating or curated mating?
+\item Start with many random cross directions?
 \end{itemize}
 \end{minipage}
 
@@ -1206,7 +1210,7 @@ Selfing or DH?
 \item Inbreeding gives added recombination
 \item But not so much as at the mixing stage
 \color{myblue}
-\item If DH is feasible, do it
+\item If doubled haploids are feasible, use them
 \end{itemize}
 \end{minipage}
 
@@ -1342,57 +1346,6 @@ R/qtl
 
 \newpage
 
-\addtocounter{page}{-1}
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-R/qtl
-\end{minipage}
-
-\vfill
-
-\centerline{\includegraphics{Figs/rqtl_lines_code_annotated1.pdf}}
-
-\vspace{15mm}
-
-
-\newpage
-
-\addtocounter{page}{-1}
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-R/qtl
-\end{minipage}
-
-\vfill
-
-\centerline{\includegraphics{Figs/rqtl_lines_code_annotated2.pdf}}
-
-\vspace{15mm}
-
-
-\newpage
-
-\addtocounter{page}{-1}
-
-\headsize \color{myyellow}
-\hfill \begin{minipage}{5.75in}
-\centering
-R/qtl
-\end{minipage}
-
-\vfill
-
-\centerline{\includegraphics{Figs/rqtl_lines_code_annotated3.pdf}}
-
-\vspace{15mm}
-
-
-\newpage
-
 \currentpdfbookmark{R/qtl: Good things}{R/qtl: good things}
 
 \headsize \color{myyellow}
@@ -1501,7 +1454,7 @@ R/qtl: Not-so-good
 
 {\smallersize \color{myblue} But accessible from R (and ruby and python)}
 
-\item Interactive graphics
+\item \href{http://www.biostat.wisc.edu/~kbroman/D3}{Interactive graphics}
 
 \item Connections to genome DBs/browsers
 
