@@ -19,7 +19,7 @@ grayplot(0:maxgen, c(0,meself2(1:maxgen)), xlab=expression(paste("Generation ", 
          mgp.x=c(1.7, 0.3, 0), mgp.y=c(2.1, 0.4, 0))
 
 lines(0:maxgen, c(0, meself4(1:maxgen)), col=color[3], lwd=2, lty=2)
-lines(0:maxgen, c(0, meself8(1:maxgen)), col=color[1], lwd=2,lty=2)
+lines(0:maxgen, c(1, meself8(1:maxgen)), col=color[1], lwd=2,lty=2)
 text(17.0, mesibA8(17)-0.1, "Eight-way", col=color[1], adj=c(0,1))
 text(17.0, mesibA4(17)-0.1, "Four-way",  col=color[3],   adj=c(0,1))
 text(17.0, mesibA2(17)-0.1, "Two-way",   col=color[2],  adj=c(0,1))
