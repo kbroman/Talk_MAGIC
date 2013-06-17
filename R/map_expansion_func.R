@@ -25,8 +25,10 @@ mesibA4 <- function(k)
 ###############
 # Eight-way
 ###############
-meself8 <- function(k)
-    4 - (((1)/(2)))^(k-2)
+meself8 <- function(k) {
+  if(k==0) return(1)
+  4 - (((1)/(2)))^(k-2)
+}
 
 mesibX8 <- function(k)
     ((14)/(3)) - (((30 + 14*sqrt(5))/(15))) * (((1+sqrt(5))/(4)))^k - (((30 - 14*sqrt(5))/(15))) * (((1-sqrt(5))/(4)))^k
