@@ -12,7 +12,7 @@ The PDF is [here](http://www.biostat.wisc.edu/~kbroman/presentations/magic_web.p
 xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
                  To the extent possible under law,
                    <a rel="dct:publisher"
-                        href="https://github.com/kbroman/Talk_CTC2013">
+                        href="https://github.com/kbroman/Talk_MAGIC">
                             <span property="dct:title">Karl
                             Broman</span></a>
                               has waived all copyright and related or
@@ -23,7 +23,7 @@ xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
                                 <span property="vcard:Country"
                                 datatype="dct:ISO3166"
                                       content="US"
-                                      about="https://github.com/kbroman/Talk_CTC2013">
+                                      about="https://github.com/kbroman/Talk_MAGIC">
                                         United States</span>.
 <br/>
   <a rel="license"
